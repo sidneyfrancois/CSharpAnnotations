@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Extensions;
+
+var simpleDate = "2023-03-24";
+var simpleDateConverted = simpleDate.ToDateTime();
+
+Console.WriteLine(simpleDate);
+Console.WriteLine(simpleDateConverted);
