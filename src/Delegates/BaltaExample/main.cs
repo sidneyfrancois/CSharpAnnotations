@@ -1,3 +1,5 @@
+using BaltaExample.Models;
+
 namespace BaltaExample
 {
     public static class MainProgram
@@ -12,9 +14,17 @@ namespace BaltaExample
             OnErrorDelegate OnErrorHandler = OnError;
         }
 
-        private static void OnSucess(IEnumerable<ArticModel> data)
+        private static void OnSucess(IEnumerable<ArticleModel> data)
         {
-            
+            foreach (var item in data)
+            {
+                Console.WriteLine(item.Title);
+            }            
+        }
+
+        private static void OnError(ErrorModel data)
+        {
+            Console.WriteLine($"ERRO: {data.Message}");
         }
     }
 }
