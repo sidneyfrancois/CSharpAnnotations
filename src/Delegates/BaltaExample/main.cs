@@ -12,7 +12,7 @@ namespace BaltaExample
         {
             OnSuccessDelegate OnSuccessHandler = OnSuccess;
             OnErrorDelegate OnErrorHandler = OnError;
-            Func<ArticleModel, string> PrintCompleteArticleData;
+            Func<ArticleModel, string> PrintCompleteArticleData = PrintAllInfo;
 
             GetArticles(OnSuccessHandler, OnErrorHandler);
 
@@ -30,6 +30,11 @@ namespace BaltaExample
         private static void OnError(ErrorModel data)
         {
             Console.WriteLine($"ERRO: {data.Message}");
+        }
+
+        private static string PrintAllInfo(ArticleModel data)
+        {
+            return $"Id: {data.Id}\nArticle title: {data.Title}";
         }
 
         private static void GetArticles(OnSuccessDelegate onSuccess, OnErrorDelegate onError)
