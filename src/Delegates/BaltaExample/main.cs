@@ -8,10 +8,14 @@ namespace BaltaExample
         private delegate void OnSuccessDelegate(IEnumerable<ArticleModel> data);
         private delegate void OnErrorDelegate(ErrorModel data);
 
-        static void main()
+        public static void main()
         {
             OnSuccessDelegate OnSuccessHandler = OnSuccess;
             OnErrorDelegate OnErrorHandler = OnError;
+
+            GetArticles(OnSuccessHandler, OnErrorHandler);
+
+            Console.WriteLine("Finished program.");
         }
 
         private static void OnSuccess(IEnumerable<ArticleModel> data)
@@ -34,7 +38,8 @@ namespace BaltaExample
                 var data = new List<ArticleModel>();
                 data.Add(new ArticleModel(1, "Artigo 1"));
                 data.Add(new ArticleModel(2, "Artigo 2"));
-                throw new Exception("Erro");
+                // throw new Exception("Erro");
+                onSuccess(data);
             }
             catch (Exception ex)
             {
