@@ -15,6 +15,7 @@ namespace BaltaExample
             Func<ArticleModel, string> PrintCompleteArticleData = PrintAllInfo;
             Action<ArticleModel, int> ChangeIdOfArticle = ChangeId;
             Predicate<ArticleModel> CheckArticleId = CheckId;
+            Predicate<ArticleModel> CheckArticleTitleIsUpper = (article => article.Title.Equals(article.Title.ToUpper()));
 
             GetArticles(OnSuccessHandler, OnErrorHandler);
 
