@@ -14,7 +14,7 @@ namespace BaltaExample
             OnErrorDelegate OnErrorHandler = OnError;
             Func<ArticleModel, string> PrintCompleteArticleData = PrintAllInfo;
             Action<ArticleModel, int> ChangeIdOfArticle = ChangeId;
-            Predicate<ArticleModel> CheckArticleId; 
+            Predicate<ArticleModel> CheckArticleId = CheckId;
 
             GetArticles(OnSuccessHandler, OnErrorHandler);
 
@@ -42,6 +42,14 @@ namespace BaltaExample
         private static void ChangeId(ArticleModel data, int Id)
         {
             // change value    
+        }
+
+        private static bool CheckId(ArticleModel data)
+        {
+            if (data.Id != 0)
+                return true;
+            else
+                return false;
         }
 
         private static void GetArticles(OnSuccessDelegate onSuccess, OnErrorDelegate onError)
