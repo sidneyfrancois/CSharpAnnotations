@@ -13,7 +13,7 @@ namespace BaltaExample
             OnSuccessDelegate OnSuccessHandler = OnSuccess;
             OnErrorDelegate OnErrorHandler = OnError;
             Func<ArticleModel, string> PrintCompleteArticleData = PrintAllInfo;
-            Action<ArticleModel, int> ChangeIdOfArticle; 
+            Action<ArticleModel, int> ChangeIdOfArticle = ChangeId; 
 
             GetArticles(OnSuccessHandler, OnErrorHandler);
 
@@ -36,6 +36,11 @@ namespace BaltaExample
         private static string PrintAllInfo(ArticleModel data)
         {
             return $"Id: {data.Id}\nArticle title: {data.Title}";
+        }
+
+        private static void ChangeId(ArticleModel data, int Id)
+        {
+            // change value    
         }
 
         private static void GetArticles(OnSuccessDelegate onSuccess, OnErrorDelegate onError)
