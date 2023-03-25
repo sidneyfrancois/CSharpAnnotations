@@ -12,6 +12,7 @@ namespace BaltaExample
         {
             OnSuccessDelegate OnSuccessHandler = OnSuccess;
             OnErrorDelegate OnErrorHandler = OnError;
+            Func<IEnumerable<ArticleModel>, string> PrintCompleteArticleData;
 
             GetArticles(OnSuccessHandler, OnErrorHandler);
 
