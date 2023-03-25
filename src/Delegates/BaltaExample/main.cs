@@ -13,6 +13,7 @@ namespace BaltaExample
             OnSuccessDelegate OnSuccessHandler = OnSuccess;
             OnErrorDelegate OnErrorHandler = OnError;
             Func<ArticleModel, string> PrintCompleteArticleData = PrintAllInfo;
+            Action<ArticleModel, int> ChangeIdOfArticle; 
 
             GetArticles(OnSuccessHandler, OnErrorHandler);
 
