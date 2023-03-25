@@ -1,0 +1,4 @@
+namespace BaltaExample.Models
+{
+    
+}
