@@ -2,10 +2,6 @@ namespace BaltaExample.Models
 {
      public class ErrorModel
     {
-        public ErrorModel()
-        {
-        }
-
         public ErrorModel(string message)
         {
             Message = message;

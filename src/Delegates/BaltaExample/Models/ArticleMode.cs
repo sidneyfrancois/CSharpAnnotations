@@ -2,11 +2,6 @@ namespace BaltaExample.Models
 {
     public class ArticleModel
     {
-        public ArticleModel()
-        {
-            
-        }
-
         public ArticleModel(int id, string title)
         {
             Id = id;
