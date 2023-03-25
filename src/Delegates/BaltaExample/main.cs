@@ -11,5 +11,10 @@ namespace BaltaExample
             OnSuccessDelegate OnSuccessHandler = OnSucess;
             OnErrorDelegate OnErrorHandler = OnError;
         }
+
+        private static void OnSucess(IEnumerable<ArticModel> data)
+        {
+            
+        }
     }
 }

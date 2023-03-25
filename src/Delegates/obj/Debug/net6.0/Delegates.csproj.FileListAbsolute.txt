@@ -1,0 +1,15 @@
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\bin\Debug\net6.0\Delegates.exe
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\bin\Debug\net6.0\Delegates.deps.json
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\bin\Debug\net6.0\Delegates.runtimeconfig.json
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\bin\Debug\net6.0\Delegates.dll
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\bin\Debug\net6.0\Delegates.pdb
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\obj\Debug\net6.0\Delegates.csproj.AssemblyReference.cache
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\obj\Debug\net6.0\Delegates.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\obj\Debug\net6.0\Delegates.AssemblyInfoInputs.cache
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\obj\Debug\net6.0\Delegates.AssemblyInfo.cs
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\obj\Debug\net6.0\Delegates.csproj.CoreCompileInputs.cache
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\obj\Debug\net6.0\Delegates.dll
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\obj\Debug\net6.0\refint\Delegates.dll
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\obj\Debug\net6.0\Delegates.pdb
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\obj\Debug\net6.0\Delegates.genruntimeconfig.cache
+C:\Users\sidne\Documents\CSharp\CSharpAnnotations\Delegates\obj\Debug\net6.0\ref\Delegates.dll
