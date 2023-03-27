@@ -5,5 +5,12 @@ namespace Events.Publishers
     {
         // event is an encapsulated delegate, delegate Notify, event ProcessCompleted of delegate type Notify
         public event Notify ProcessCompleted;
+
+        public void StartProcessingFile()
+        {
+            Console.WriteLine("Processing file...");
+        }
+
+
     }
 }
