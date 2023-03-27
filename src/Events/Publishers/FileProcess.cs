@@ -1,5 +1,7 @@
 namespace Events.Publishers
 {
+    public delegate void Notify();
+
     // publisher class
     public class FileProcess
     {
