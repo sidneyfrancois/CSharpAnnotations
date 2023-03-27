@@ -11,6 +11,7 @@ namespace Events.Publishers
         public void StartProcessingFile()
         {
             Console.WriteLine("Processing file...");
+            OnProcessCompleted();
         }
 
         protected virtual void OnProcessCompleted()
